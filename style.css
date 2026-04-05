@@ -9,7 +9,6 @@
 body{
     margin: 0;
     font-family: Arial;
-    min-width: 600px;
     line-height: 1.5;
 }
 
@@ -30,7 +29,7 @@ img.profile{
 h1{
     color: white;
     text-align: center;
-    font-size: 42px;
+    font-size: 35px;
     margin-top: 10px;
     margin-bottom: 0;
 
@@ -194,12 +193,6 @@ div.droite p:first-child{
     padding-left: 8px;
     
 }
-/*
-@media only screen and (max-width: 700px){
-    div.contenu{
-        width: 500px;
-    }
-}
 
 /*les autres pages du portfolio*/
 
@@ -270,4 +263,56 @@ iframe{
     height: 600px;
     
     
+}
+
+/*resposive mobile*/
+@media only screen and (max-width: 570px){
+    h1{
+        font-size: 25px;
+    }
+    img.profile{
+        margin-top: 70px;
+        height: 90px;
+    }
+    div.contacts a{
+        font-size: 13px;
+    }
+
+    img.profile2{
+        width: 100%;
+    
+    }
+    div.col60{
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 12px;
+    }
+
+    table.t1, table.t2{
+         width: 100%;
+    }
+
+    div.contenu img{
+        height: 70px;
+    }
+    p.parlons{
+        font-size: 25px;
+    }
+    div.contenu{
+        overflow: auto;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    
+    div.header1 p{
+        font-size: 14px;
+    }
+
+    img.r-image{
+        margin-left: 0;
+    }
+    div.image_projet1{
+        padding-left: 50px;
+    }
+
 }
