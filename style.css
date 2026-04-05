@@ -1,0 +1,273 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --color1: #D89584;
+    --color2:#F4F4F4;
+    --color3:#979797;
+}
+body{
+    margin: 0;
+    font-family: Arial;
+    min-width: 600px;
+    line-height: 1.5;
+}
+
+div.cover{
+    background: url(cover_overlay.png) no-repeat center/100% 100%,url(cover.jpg) no-repeat center/cover;
+    height: 360px;
+    position: relative;
+}
+
+img.profile{
+    height: 100px;
+    position: relative;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: 50px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 42px;
+    margin-top: 10px;
+    margin-bottom: 0;
+
+}
+p.sous_titre{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+div.contacts{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    border-left: solid 4px var(--color1);
+    padding-left: 8px;
+}
+
+div.contacts *{
+    text-align: left;
+    color: white;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+div.contacts p:first-child{
+    margin-bottom: 10px;
+}
+
+p.me_contacter a{
+    color: var(--color1);
+    border: solid;
+    padding: 8px 20px;
+    background-color: #00000040;
+    text-decoration: none;
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 14px;
+}
+p.me_contacter{
+    text-align: center;
+}
+p.me_contacter a:hover{
+    color: white;
+}
+/*les zones*/
+
+div.zone_gris1{
+    background: url(triangle2white.svg) no-repeat center bottom/100%;
+    background-color: var(--color2);
+    padding-bottom: 70px;
+}
+
+div.zone_gris2{
+    background: url(triangle1white.svg) no-repeat center top/100%;
+    background-color: var(--color2);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 70px;
+    
+}
+.zone_blanche{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 650px;
+}
+div.zone_gris1, .zone_blanche, .zone_gris2{
+    padding-top: 25px;
+}
+
+
+div.separateur1{
+    background-color: var(--color3);
+    height: 1px;
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p.profil{
+    text-align: center;
+    font-size: 22px;
+    color: #656565;
+}
+ h2{
+    font-size: 34px;
+    text-align: center;
+    margin: 15px;
+ }
+ h2.p{
+    margin-top: 50px;
+ }
+
+img.profile2{
+    width: 40%;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    
+}
+div.col60{
+    width: 60%;
+    float: right;
+    padding-left: 50px;
+ }
+
+ p.profile2{
+    margin-top: 0;
+    border-left: solid var(--color1) 5px;
+    padding-left: 8px;
+    height: 50px;
+    display: inline-block;
+ }
+.section{
+    overflow: auto;
+ }
+table.t1, table.t2{
+    width: 47%;
+}
+
+p.b1{
+    border-left: solid var(--color1) 5px;
+    height: 50px;
+    padding-right: 8px;
+}
+table.t2{
+    float: right;
+}
+div.contenu{
+    padding-top: 25px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 50px auto 50px auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    
+}
+p.parlons{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+div.contenu img{
+    height: 100px;
+}
+div.image{
+    width: 25%;
+    display: inline-block;
+}
+div.droite{
+    width: 75%;
+    float: right;
+}
+div.droite p:first-child{
+    border-left: solid 5px var(--color1);
+    padding-left: 8px;
+    
+}
+/*
+@media only screen and (max-width: 700px){
+    div.contenu{
+        width: 500px;
+    }
+}
+
+/*les autres pages du portfolio*/
+
+div.portfolio-header{
+    height: 90px;
+    background: url(header.jpg) no-repeat center/cover;
+    
+}
+div.header1{
+    width: 50%;
+    color: white;
+    text-align: left;
+    display: inline-block;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    
+}
+div.header1 p{
+    border-left: solid var(--color1);
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    font-size: 20px;
+}
+
+div.header2{
+    width: 50%;
+    float: right;
+    text-align: right;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+div.header2 a{
+    color: var(--color1);
+    border: solid;
+    padding: 8px 15px;
+    background-color: #00000040;
+    text-decoration: none;
+    font-size: 10px;
+    margin-right: 25px;
+}
+
+p.under-portfolio{
+    text-align: center;
+    font-size: 18px;
+    margin-top: -15px;
+    overflow: visible;
+}
+
+a.restaurant-back{
+    color: var(--color1);
+    margin: 20px;
+    position: absolute;
+}
+
+img.r-image{
+    width: 70%;
+    max-width: 550px;
+    margin-top: 25px;
+    margin-left: 75px;
+    margin-right: auto;
+    
+}
+/*iframe*/
+iframe{
+    width: 100%;
+    height: 600px;
+    
+    
+}
